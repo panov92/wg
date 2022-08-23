@@ -355,7 +355,7 @@ function revokeClient() {
     CLIENT_NAME=$(grep -E "^### Client" "/etc/wireguard/${SERVER_WG_NIC}.conf" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
   else
     CLIENT_EXISTS=$(grep -c -E "^### Client ${CLIENT_NAME}\$" "/etc/wireguard/${SERVER_WG_NIC}.conf")
-    if [[ ${CLIENT_EXISTS} == '1' ]]; then
+    if [[ ${CLIENT_EXISTS} == '0' ]]; then
       echo ""
       echo "The client with the specified name doesn't exists."
       echo ""
