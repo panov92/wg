@@ -1,0 +1,1 @@
+sed -i "s|### STOP ${CLIENT_NAME} ||g" /etc/wireguard/wg0.conf
