@@ -109,11 +109,11 @@ function installQuestions() {
 #	done
 
 	# Adguard DNS by default
-	CLIENT_DNS_1="94.140.14.14"
+	CLIENT_DNS_1="8.8.8.8"
 #	until [[ ${CLIENT_DNS_1} =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; do
 #		read -rp "First DNS resolver to use for the clients: " -e -i 94.140.14.14 CLIENT_DNS_1
 #	done
-  CLIENT_DNS_2="94.140.15.15"
+  CLIENT_DNS_2="1.1.1.1"
 #	until [[ ${CLIENT_DNS_2} =~ ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$ ]]; do
 #		read -rp "Second DNS resolver to use for the clients (optional): " -e -i 94.140.15.15 CLIENT_DNS_2
 #		if [[ ${CLIENT_DNS_2} == "" ]]; then
